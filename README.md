@@ -3,6 +3,9 @@ A Web App to Make your Resume built using Bootstrap and Handelbars
 
 Site link: [resumemaker999.herokuapp.com](resumemaker999.herokuapp.com/)
 
+# Contributing for Resume-Maaker
+Do check [this] before contributing
+
 # Hacktoberfest-2022
 <img src = "https://github.com/shubham9672/Hacktoberfest2022/blob/main/img/hacktober.png"/>
 <p class="text-justify"> Hacktobefest PRs are welcome. Hacktoberfest is digitalocean’s annual event that encourages people to contribute to open source throughout october. Much of modern tech infrastructure—including some of digitalocean’s own products—relies on open-source projects built and maintained by passionate people who often don’t have the staff or budgets to do much more than keep the project alive. Hacktoberfest is all about giving back to those projects, sharpening skills, and celebrating all things open source, especially the people that make open source so special. </p>
