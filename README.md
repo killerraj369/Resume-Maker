@@ -4,7 +4,7 @@ A Web App to Make your Resume built using Bootstrap and Handelbars
 Site link: [resumemaker999.herokuapp.com](resumemaker999.herokuapp.com/)
 
 # Contributing for Resume-Maaker
-Do check [this] before contributing
+Do check [this](https://github.com/killerraj369/Resume-Maker/Contributing.md) before contributing
 
 # Hacktoberfest-2022
 <img src = "https://github.com/shubham9672/Hacktoberfest2022/blob/main/img/hacktober.png"/>
