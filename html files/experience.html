@@ -23,7 +23,41 @@
             font-size: 1.2rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        
+
+        .expname{
+            margin-bottom: 1px;
+        }
+
+        .exp{
+          /* gap: 10px; */
+          margin-bottom: 0px;
+        }
+
+        .mygap2{
+          gap: 5px;
+        }
+
+        .myimg2{
+          margin-top: 0px;
+          margin-bottom: 70px;
+          margin-left: 130px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        input{
+          border: 1.5px solid rgb(151, 148, 148);
+          padding-left: 5px;
+          border-radius: 4px;
+        }
+
+        input:focus{
+          border: 2.5px solid rgb(102, 99, 99);
+        }
+
+        input:hover{
+          background-color: rgb(238, 231, 231);
+          box-shadow: 2.5px 2.5px;
+        }
     </style>
         <!-- <div class="container-fluid">
             <div class="row justify-content-center align-items-center>
@@ -168,7 +202,7 @@
         <!-- <img  src="https://www.resumonk.com/assets/template-thumbnails/regal-d159caed5f8ee30146b0c60a821c22d0c251b844826a017542a4dfa7c4a7462db2.jpg" > -->
         <!-- <img  src="https://venngage-wordpress.s3.amazonaws.com/uploads/2020/02/Resume-Design-Template-2.png" > -->
         
-        <img height="300px" width="250px" src="/Resources/Images/experience.png" >
+        <img height="350px" width="300px" src="../public/Resources/Images/experience.png" class="myimg2">
       </div>
       <div class="col-lg-6 ">
         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Make your Free Online Resume - Right Now </h1>
@@ -186,55 +220,61 @@
           <form action="/exp" method="post"> 
 
         
-            <div class="row">
+            <div class="row mygap2">
                 <div class="col">
-                    <p> Employer </p>  <input name="employer" type="text" placeholder="Employer/Company Name">
+                    <p class="expname"> Employer: </p>  <input name="employer" type="text" placeholder="Employer/Company Name" class="exp" size="24">
                 </div>
                 <div class="col">
-                    <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title">
+                    <p class="expname"> Job Title:</p><input name="job" type="text" placeholder="Enter Your Job Title" size="24">
                 </div>
             </div>
              
-              
+              <br>
             
                
-           <div class="row">
+           <div class="row mygap2">
                <div class="col ml-4">
-                <p> City</p><input name="company_city" type="text" placeholder="Enter Your Company Location">
+                <p class="expname"> City:</p><input name="company_city" type="text" placeholder="Enter Your Company Location" class="exp" size="24">
                </div>
     
                <div class="col">
-                <p> State</p><input name="company_state" type="text" placeholder="Compnay State ">
+                <p class="expname"> State:</p><input name="company_state" type="text" placeholder="Compnay State " size="24">
                </div>
-               
-               
            </div>  
              
+           <br>
            
-           <div class="row">
+           <div class="row mygap2">
                <div class="col">
-                <p> Start Date</p> <input name="start_date" type="date" placeholder="Enter Your Starting Date">
+                <p class="expname"> Start Date:</p> <input name="start_date" type="date" placeholder="Enter Your Starting Date" class="exp">
                </div>
                <div class="col">
-                <p> Last Date</p> <input name="end_date" type="date" placeholder="Enter Your Last Date">
+                <p class="expname"> Last Date:</p> <input name="end_date" type="date" placeholder="Enter Your Last Date">
                </div>
-               
            </div>
+
+           <br>
 
            <div class="row">
             <div class="col justify-content-start">
-             <p>Job Description</p><input type="text"  name="job_description" style="width: 30rem;">
+             <p class="expname">Job Description:</p><input type="text"  name="job_description" style="width: 21rem;">
 
             </div>
         </div>
+
+        <br>
+
         <div class="row">
             <div class="col">
-             <input id="butt" type="submit" style="margin-top: 9px;background-color: rgb(238, 158, 10); width: 10vw; height:3vw; border-radius: 10px;">
+             <input id="butt" type="submit" style="margin-top: 9px;background-color: rgb(238, 158, 10); width: 80px; height:30px; border-radius: 10px;">
              
             </input>
             </div>
          
         </div>
+
+        <br>
+
            <div class="row">
                <div class="col">
                 <!-- <div class="col"> -->
