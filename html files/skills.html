@@ -24,6 +24,40 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
         
+        .skills{
+            margin-bottom: 1px;
+        }
+
+        .sl{
+          /* gap: 10px; */
+          margin-bottom: 0px;
+        }
+
+        .mygap5{
+          gap: 5px;
+        }
+
+        .myimg5{
+          margin-top: 0px;
+          margin-bottom: 150px;
+          margin-left: 110px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        input{
+          border: 1.5px solid rgb(151, 148, 148);
+          padding-left: 5px;
+          border-radius: 4px;
+        }
+
+        input:focus{
+          border: 2.5px solid rgb(102, 99, 99);
+        }
+
+        input:hover{
+          background-color: rgb(238, 231, 231);
+          box-shadow: 2.5px 2.5px;
+        }
     </style>
         <!-- <div class="container-fluid">
             <div class="row justify-content-center align-items-center>
@@ -174,7 +208,8 @@
         <!-- <img  src="https://www.resumonk.com/assets/template-thumbnails/regal-d159caed5f8ee30146b0c60a821c22d0c251b844826a017542a4dfa7c4a7462db2.jpg" > -->
         <!-- <img  src="https://venngage-wordpress.s3.amazonaws.com/uploads/2020/02/Resume-Design-Template-2.png" > -->
         
-        <img height="300px" width="250px" src="/Resources/Images/skills.png" >
+        <!-- <img height="300px" width="250px" src="/Resources/Images/skills.png" > -->
+        <img height="350px" width="300px" src="../public/Resources/Images/skills.png" class="myimg5">
       </div>
       <div class="col-lg-6 ">
         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Make your Free Online Resume - Right Now </h1>
@@ -192,16 +227,15 @@
           <form action="/skills" method="post"> 
 
         
-            <div class="row" name="">
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill1" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill1" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level1" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level1">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -210,16 +244,18 @@
                     </select>
                 </div>
             </div>
-            <div class="row" name="">
+
+            <br>
+
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill2" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill2" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level2" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level2">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -228,16 +264,18 @@
                     </select>
                 </div>
             </div>
-            <div class="row" name="">
+
+            <br>
+
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill3" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill3" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level3" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level3">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -246,16 +284,18 @@
                     </select>
                 </div>
             </div>
-            <div class="row" name="">
+
+            <br>
+
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill4" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill4" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level4" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level4">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -264,16 +304,18 @@
                     </select>
                 </div>
             </div>
-            <div class="row" name="">
+
+            <br>
+
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill5" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill5" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level5" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level5">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -282,16 +324,18 @@
                     </select>
                 </div>
             </div>
-            <div class="row" name="">
+
+            <br>
+
+            <div class="row mygap5" name="">
                 <div class="col">
-                    <p> Skill </p>  <input name="skill6" type="text" placeholder="Enter your Skill">
+                    <p class="sl"> Skill: </p>  <input name="skill6" type="text" placeholder="Enter your Skill">
                 </div>
                 <div class="col" name="">
                    
                     <!-- <p> Job Title</p><input name="job" type="text" placeholder="Enter Your Job Title"> -->
-                    <label for="cars">Choose your Skill level:</label>
-                    <br>
-                    <select name="level6" id="cars" style="margin-top: 1.2rem;">
+                    <label for="cars" class="sl">Choose your Skill level:</label>
+                    <select name="level6">
                       <option value="★ ☆ ☆ ☆ ☆">1 Star ( Noob )</option>
                       <option value="★ ★ ☆ ☆ ☆">2 Star (Basic)</option>
                       <option value="★ ★ ★ ☆ ☆">3 Star (Skillfull)</option>
@@ -301,27 +345,34 @@
                 </div>
             </div>
            
-<br>
-            <div class="row">
+            <br>
+
+            <div class="row mygap5">
                 <div class="col">
-               <p> Another Skills</p>     <input type="text" placeholder="More Skills" name="more_skills" style="width: 15rem;"width="30rem">
+               <p class="sl"> Another Skills:</p>     <input type="text" placeholder="More Skills" name="more_skills" style="width: 15rem;"width="30rem">
                 </div>
             </div>
              <br>
              
-             <div class="row">
+             <div class="row mygap5">
                <div class="col">
-                <p> Hobbies</p>     <input type="text" placeholder="Add your Hobbies" name="hobby" style="width: 15rem;"width="30rem">
+                <p class="sl"> Hobbies:</p>     <input type="text" placeholder="Add your Hobbies" name="hobby" style="width: 15rem;"width="30rem">
                </div>
              </div>
-             <div class="row">
+
+             <br>
+
+             <div class="row mygap5">
                <div class="col">
-                 <button id="skill">Add More Skills</button>
+                 <button id="skill">Add More Skills:</button>
                </div>
              </div>
-             <div class="row">
+
+             <br>
+
+             <div class="row mygap5">
               <div class="col">
-               <input id="butt" type="submit" style="margin-top: 9px;background-color: rgb(238, 158, 10); width: 10vw; height:3vw; border-radius: 10px;">
+               <input id="butt" type="submit" style="margin-top: 9px;background-color: rgb(238, 158, 10);width: 80px; height:30px; border-radius: 10px;">
                
               </input>
               </div>
