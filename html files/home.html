@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume Maker- Where the World make Resumes</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 </head>
 <style>
   @media only screen and (max-width: 521px) {
@@ -33,6 +34,7 @@
    {
      visibility: hidden;
    }
+
    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
@@ -152,6 +154,26 @@ form .signup-link a{
 }
 form .signup-link a:hover{
   text-decoration: underline;
+
+ /* nav to top button*/
+.fain {
+  opacity:1;
+}
+.faout {
+  opacity:0;
+}
+#natop
+{
+  background: #6441e0;
+  outline: none;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  left: 1425px;
+  height: 55px;
+  width: 55px;
+  border-radius: 30px;
+
 }
 </style>
 
@@ -646,6 +668,7 @@ form .signup-link a:hover{
     </div>
 
 
+
 <div id="login">
   <div class="center">
     <input type="checkbox" id="show">
@@ -679,6 +702,8 @@ form .signup-link a:hover{
  </div>
 </div>
 
+   
+
 
 
 
@@ -692,6 +717,25 @@ form .signup-link a:hover{
     })
 
     </script>
+    
+
+    <!--nav to top button script-->
+    <script>
+      navtotop = document.getElementById("navtotop");
+  
+      var navToTop = function () {
+      var y = window.scrollY;
+      if (y >= 100) {
+        navtotop.className = "fain"
+      } 
+      else {
+        navtotop.className = "faout"
+     }
+     } ;
+    window.addEventListener("scroll", navToTop);
+    </script>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
