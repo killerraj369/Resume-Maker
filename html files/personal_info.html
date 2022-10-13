@@ -212,7 +212,7 @@
         
         <img height="350px" width="300px" src="../public/Resources/Images/personal.png" class="myimg4">
       </div>
-      <div class="col-lg-6 ">
+      <div class="grid">
         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Make your Free Online Resume - Right Now </h1>
         <p class="lead">We build the best Resumes for our user. Our Resume has been selected by the Top Companies around the world.
             Click below to make your free Resume and get your Dream Job .<br>
@@ -225,77 +225,60 @@
          </a>  -->
         
           <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Styles</button> -->
-          <form action="/personal_info" method="post"> 
 
-        
-            <div class="row mygap4">
-                <div class="col">
-                    <p class="pinfo"> First Name </p>  <input name="first" type="text" placeholder="Enter Your First Name" class="pi" size="24">
-                </div>
-                <div class="col">
-                    <p class="pinfo"> Second Name</p><input name="second" type="text" placeholder="Enter Your Second Name" size="24">
-                </div>
-            </div>
-             
-            <br>
+
+            <label for="firstname">
+              First name 
+              <input type="text" name="firstname" id="firstname" autocomplete placeholder="Enter your First Name">
+            </label>
+
+            <label for="lastname">
+              Last name 
+              <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name">
+            </label>
+
+            <label for="address">
+              Address 
+              <input type="text" name="address" id="address" placeholder="Enter your Address">
+            </label>
+
+            <label for="City">
+              City 
+              <input type="text" name="city" id="city" placeholder="Enter your city of residence">
+            </label>
+
+            <label for="Country">
+              Country 
+              <input type="text" name="country" id="country" placeholder="Enter your Country">
+            </label>
+
+            <label for="email">
+              Email 
+              <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </label>
+
+            <label>
+              Zip code
+              <input type="text" name="zip" id="zip" placeholder="Enter your Zip Code">
+            </label>
+
+            <label for="phone">
+              Phone
+              <input type="text" name="phone" id="phone" placeholder="Enter your Phone Number">
+            </label>
+
+            <label for="Professional summary">
+              Professional summary
+              <input type="text" name="summary" id="summary" placeholder="Enter your Professional summary">
+            </label>
+
+            <label for="submit">
+              <input type="submit" name="submit" id="submit" value="Submit">
+            </label>
             
-                <p class="pinfo"> Address</p> <input name="add" type="text" placeholder="Enter Your Address" style="width: 21rem;">
-              
-                <br>
-                <br>
-           <div class="row">
-               <div class="col ml-4">
-                <p class="pinfo"> City</p><input name="city" type="text" placeholder="Enter Your City" class="pi" size="24">
-               </div>
-    
-               <div class="col">
-                <p class="pinfo"> Zip Code</p><input name="zip" type="text" placeholder="Enter Your Zip Code" size="24" >
-               </div>
-           </div>  
-
-           <br>
-             
-           <div class="row mygap4">
-               <div class="col">
-                <p class="pinfo"> Email Address</p> <input name="email" type="email" placeholder="Enter Your Email Address" class="pi" size="24">
-               </div>
-               <div class="col">
-                <p class="pinfo"> Country</p> <input name="Country" type="text" placeholder="Enter Your Country" size="24">
-               </div>
-           </div>
-
-           <br>
-          
-           <div class="row mygap4">
-               <div class="col">
-                <div class="col">
-                    <p class="pinfo"> Phone</p> <input name="phone" type="text" placeholder="Enter Your Phone" size="24">
-        
-                   </div>
-               </div>
-           </div>
-
-           <br>
-
-           <div class="row mygap4">
-
-                <div class="col">
-                  <p class="pinfo"> Professional Summary</p> <input name="professional_summary" type="text" placeholder="Enter Your Professional Summary" style="width: 21rem;">
-                </div>
-            </div>
-
-          <br>
-
-           <div class="row mygap4">
-               <div class="col">
-                <input id="butt" type="submit" style="margin-top: 9px;background-color: rgb(238, 158, 10); width: 80px; height:30px; border-radius: 10px;">
-                
-               </input>
-               </div>
-           </div>
-          </form>        
         </div>
-      </div>
+
+           <br><br><br>      
     </div>
   </div>
   
@@ -315,27 +298,6 @@
           </ul>
         </div>
   
-        <div class="col-2">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-2">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
   
         <div class="col-4 offset-1">
           <form>
