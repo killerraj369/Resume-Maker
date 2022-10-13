@@ -22,6 +22,8 @@
 </head>
 <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsP2tzYmQfV1rufeFs2r6P-EEKbOc4KJ5tw&usqp=CAU">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> 
+
 <body>
     <style>
 
@@ -72,99 +74,6 @@
           box-shadow: 2.5px 2.5px;
         }
     </style>
-        <!-- <div class="container-fluid">
-            <div class="row justify-content-center align-items-center>
-                <div class="col-sm-9">
-                    <p id="Personal"> PERSONAL INFO</p>
-                    <hr>
-                    <p id="that">Kindly Enter your personal details that will be displayed in your Resume</p>
-                </div>
-            </div>
-        </div>
-    
-        
-<div class="container" style="display: flex;" >
-
-    <div class="container1" >
-        <form action="/create" method="post"> 
-
-        
-            <div class="row">
-                <div class="col">
-                    <p> First Name </p>  <input name=" f-name" type="text" placeholder="Enter Your First Name">
-                </div>
-                <div class="col">
-                    <p> Second Name</p><input name=" s-name" type="text" placeholder="Enter Your Second Name">
-                </div>
-            </div>
-             
-              
-            
-                <p> Address</p> <input name=" add" type="text" placeholder="Enter Your Address">
-              
-                <br>
-           <div class="row">
-               <div class="col ml-4">
-                <p> City</p><input name=" city" type="text" placeholder="Enter Your City">
-               </div>
-    
-               <div class="col">
-                <p> Zip Code</p><input name=" zip" type="text" placeholder="Enter Your Zip Code">
-               </div>
-               
-               
-           </div>  
-             
-           <div class="row">
-               <div class="col">
-                <p> Email Address</p> <input name=" email" type="email" placeholder="Enter Your Email Address">
-               </div>
-               <div class="col">
-                <p> Country</p> <input name=" Country" type="text" placeholder="Enter Your Country">
-               </div>
-               
-           </div>
-          
-           <div class="row">
-               <div class="col">
-                <div class="col">
-                    <p> Phone</p> <input name=" phone" type="text" placeholder="Enter Your Phone">
-        
-                   </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col">
-                <input type="submit">
-                
-               </input>
-               </div>
-            
-           </div>
-            
-    
-          </form>
-    
-    </div>
-    
-
-
-
-
-    <div class="container2">
-        <img width="600vw" src="https://cdn-blog.novoresume.com/articles/what-to-put-on-a-resume/resume-contact-section-what-to-include.png ">
-    </div>
-    
-</div>
-
-
-
-
-
-
-
-
- -->
  
  <header class="p-3 bg-dark text-white">
     <div class="container-fluid">
@@ -173,13 +82,19 @@
           <img width="100px" height="50px" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYod7KZAkri6S212bhV4Apg1kX1s1SnaNVg&usqp=CAU">
         </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li><strong>Resume Builder</strong></li>
+          </ul>
+  
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/faq">FAQs</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
@@ -212,7 +127,7 @@
         
         <img height="350px" width="300px" src="../public/Resources/Images/personal.png" class="myimg4">
       </div>
-      <div class="grid">
+      <div class="form" align="auto">
         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Make your Free Online Resume - Right Now </h1>
         <p class="lead">We build the best Resumes for our user. Our Resume has been selected by the Top Companies around the world.
             Click below to make your free Resume and get your Dream Job .<br>
@@ -224,7 +139,7 @@
           <button  type="button" class="btn btn-primary btn-lg px-4 me-md-2">Create Your Resume</button>
          </a>  -->
         
-          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Styles</button> -->
+          <!--<button type="button" class="btn btn-outline-secondary btn-lg px-4">Styles</button> -->
 
 
             <label for="firstname">
@@ -275,9 +190,7 @@
             <label for="submit">
               <input type="submit" name="submit" id="submit" value="Submit">
             </label>
-            
         </div>
-
            <br><br><br>      
     </div>
   </div>
@@ -288,32 +201,32 @@
     <footer class="py-5">
       <div class="row">
         <div class="col-2">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          <h3>Section</h3>
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/faq">FAQs</a></li>
+            <li><a href="/about">About</a></li>
           </ul>
         </div>
   
   
         <div class="col-4 offset-1">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
+            <h3>Subscribe to our newsletter</h3>
             <p>Monthly digest of whats new and exciting from us.</p>
+            <form>
             <div class="d-flex w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+              <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+              <button for="submit" id="submit" type="submit">Subscribe</button>
             </div>
           </form>
         </div>
       </div>
   
       <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <p>© 2021-present Company, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
           <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
@@ -321,24 +234,4 @@
         </ul>
       </div>
     </footer>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
 </html>
