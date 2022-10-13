@@ -1,5 +1,5 @@
 {
-   "version": 1,
+   "version": 2,
    "name": "resume-maker",
    "builds": [
       { "src": "server.js", "use": "@vercel/node" }
