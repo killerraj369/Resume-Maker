@@ -1,7 +1,7 @@
 # Resume-Maker
 A Web App to Make your Resume built using Bootstrap and Handelbars
 
-Site link: [resumemaker999.herokuapp.com](resumemaker999.herokuapp.com/)
+Site link: [https://resume-maker-killerraj369.vercel.app](https://resume-maker-killerraj369.vercel.app/)
 
 # Contributing for Resume-Maker
 Do check [this](https://github.com/killerraj369/Resume-Maker/blob/main/Contributing.md) before contributing.
