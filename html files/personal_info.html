@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,7 +83,7 @@
           <img width="100px" height="50px" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYod7KZAkri6S212bhV4Apg1kX1s1SnaNVg&usqp=CAU">
         </a>
 
-        <nav>
+        <nav class="form navbar-light">
           <ul>
             <li><strong>Resume Builder</strong></li>
           </ul>
@@ -96,14 +97,13 @@
           </ul>
         </nav>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+        <div class="form navbar-light" align="right">
+          <ul>
+            <a href="/login" role="button" class="primary">Login</a>
+          </ul>
+          <a href="#" role="button" class="contrast">Sign-up</a>
         </div>
+
       </div>
     </div>
   </header>
@@ -198,11 +198,11 @@
   <hr>
       
   <div class="container">
-    <footer class="py-5">
+    <footer>
       <div class="row">
-        <div class="col-2">
+        <div class="card-footer">
           <h3>Section</h3>
-          <ul class="nav">
+          <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/">Features</a></li>
             <li><a href="/pricing">Pricing</a></li>
