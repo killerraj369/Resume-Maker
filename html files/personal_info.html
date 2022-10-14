@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<html data-theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,19 +38,7 @@
             font-size: 1.2rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        
-        .pinfo{
-            margin-bottom: 1px;
-        }
 
-        .pi{
-          /* gap: 10px; */
-          margin-bottom: 0px;
-        }
-
-        .mygap4{
-          gap: 5px;
-        }
 
         .myimg4{
           margin-top: 0px;
@@ -77,36 +64,34 @@
     </style>
  
  <header class="p-3 bg-dark text-white">
-    <div class="container-fluid">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img width="100px" height="50px" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYod7KZAkri6S212bhV4Apg1kX1s1SnaNVg&usqp=CAU">
-        </a>
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img width="100px" height="50px"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYod7KZAkri6S212bhV4Apg1kX1s1SnaNVg&usqp=CAU">
+      </a>
 
-        <nav class="form navbar-light">
-          <ul>
-            <li><strong>Resume Builder</strong></li>
-          </ul>
-  
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Features</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/faq">FAQs</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="/" class="nav-link px-2 text-white">Features</a></li>
+        <li><a href="/pricing" class="nav-link px-2 text-white">Pricing</a></li>
+        <li><a href="/faq" class="nav-link px-2 text-white">FAQs</a></li>
+        <li><a href="/aboutx" class="nav-link px-2 text-white">About</a></li>
+      </ul>
 
-        <div class="form navbar-light" align="right">
-          <ul>
-            <a href="/login" role="button" class="primary">Login</a>
-          </ul>
-          <a href="#" role="button" class="contrast">Sign-up</a>
-        </div>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+      </form>
 
-      </div>
+      <div class="form navbar-light" align="right">
+        <ul>
+          <a href="/login" role="button" class="primary">Login</a>
+        </ul>
+        <a href="#" role="button" class="contrast">Sign-up</a>
     </div>
-  </header>
+  </div>
+</header>
+
 
  <div class="container-fluid">
     <div class="row" justify-content-center align-items-center >
@@ -118,16 +103,16 @@
     </div>
 </div>
 
-
+<div>
  <div class="container col-xxl-8 px-4 py-5 ">
     <div class="row flex-lg-row-reverse justify-content-centre align-content-centre align-items-center g-5 ">
-      <div class="col-10 col-sm-8 col-lg-6 justify-content-center  ">
+      <div align="right">
         <!-- <img  src="https://www.resumonk.com/assets/template-thumbnails/regal-d159caed5f8ee30146b0c60a821c22d0c251b844826a017542a4dfa7c4a7462db2.jpg" > -->
         <!-- <img  src="https://venngage-wordpress.s3.amazonaws.com/uploads/2020/02/Resume-Design-Template-2.png" > -->
         
         <img height="350px" width="300px" src="../public/Resources/Images/personal.png" class="myimg4">
       </div>
-      <div class="form" align="auto">
+      <div class="form" align="left">
         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Make your Free Online Resume - Right Now </h1>
         <p class="lead">We build the best Resumes for our user. Our Resume has been selected by the Top Companies around the world.
             Click below to make your free Resume and get your Dream Job .<br>
@@ -194,13 +179,13 @@
            <br><br><br>      
     </div>
   </div>
-  
+</div>
   <hr>
       
   <div class="container">
     <footer>
       <div class="row">
-        <div class="card-footer">
+        <!-- <div class="card-footer">
           <h3>Section</h3>
           <ul>
             <li><a href="/">Home</a></li>
@@ -210,16 +195,24 @@
             <li><a href="/about">About</a></li>
           </ul>
         </div>
+   -->
   
-  
-        <div class="col-4 offset-1">
+        <div class="form">
             <h3>Subscribe to our newsletter</h3>
             <p>Monthly digest of whats new and exciting from us.</p>
             <form>
-            <div class="d-flex w-100 gap-2">
+            <div class="d-flex w-80 gap-2 ">
               <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
-              <button for="submit" id="submit" type="submit">Subscribe</button>
+              <input id="email" type="email" name="email" class="form-control" placeholder="Email address">
+              <label for="submit">
+                <input type="submit" name="submit" id="submit" value="Subscribe">
+              </label>
+              <fieldset>
+                <label for="switch">
+                  <input type="checkbox" id="switch" name="switch" role="switch">
+                  I agree to T&C 
+                </label>
+              </fieldset>
             </div>
           </form>
         </div>
