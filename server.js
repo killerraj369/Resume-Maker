@@ -97,6 +97,7 @@ function _createPdfStream(html) {
             if(err)
             {
                 return reject(err);
+                console.log(err)
             }
             return resolve(stream);
         });
@@ -332,9 +333,10 @@ app.get("/final", function (req, res)
                 if(err)
                 {
                     throw new Error(err);
+                    
                 }
                 
-                let namePDF ="Name - PDF";
+                let namePDF ="Resume"+first+second;
                 res.setHeader('Content-disposition',"inline; filename*=UTF-8''" +namePDF);
                 res.setHeader('Content-type','application/pdf');
                 return res.send(buffer);
@@ -374,7 +376,7 @@ app.get("/final", function (req, res)
 
 
 
-app.listen(port, function (req, res) {
+app.listen(port,'0.0.0.0', function (req, res) {
     console.log("Server has started on the port 3000");
 })
 
