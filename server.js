@@ -73,7 +73,7 @@ let level4;
 let level5;
 let level6;
 
-// Hobby 
+// Hobby
 
 let hobb;
 
@@ -102,7 +102,7 @@ function _createPdfStream(html) {
             return resolve(stream);
         });
     });
-    
+
 }
 
 function _streamToBuffer(Stream,cb)
@@ -111,7 +111,7 @@ function _streamToBuffer(Stream,cb)
     Stream.on('data',(chunk) => {
         chunks.push(chunk);
     });
-    
+
     Stream.on('end' ,() => {
         return cb(null,Buffer.concat(chunks));
     }
@@ -244,7 +244,7 @@ app.get("/preview", function (req, res) {
         co: country,
         deg: degree,
         col: college,
-        
+
         jo: job,
         emp: employer,
         ct: company_city,
@@ -267,10 +267,10 @@ app.get("/preview", function (req, res) {
     });
 })
 app.post("/preview", function (req, res) {
-     
+
 })
 
-app.get("/final", function (req, res) 
+app.get("/final", function (req, res)
 {
 
     // {
@@ -278,7 +278,7 @@ app.get("/final", function (req, res)
     //         format: "A4",
     //         orientation: "landscape",
     //         base: "http://127.0.0.1:3002/uploads/theme/",
-    //         timeout: 100000, 
+    //         timeout: 100000,
     //         phantomArgs: ["--web-security=false","--local-to-remote-url-access=true"]
     //     }
 
@@ -333,9 +333,9 @@ app.get("/final", function (req, res)
                 if(err)
                 {
                     throw new Error(err);
-                    
+
                 }
-                
+
                 let namePDF ="Resume"+first+second;
                 res.setHeader('Content-disposition',"inline; filename*=UTF-8''" +namePDF);
                 res.setHeader('Content-type','application/pdf');
@@ -379,5 +379,3 @@ app.get("/final", function (req, res)
 app.listen(port,'0.0.0.0', function (req, res) {
     console.log("Server has started on the port 3000");
 })
-
-
