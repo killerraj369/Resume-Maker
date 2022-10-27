@@ -27,6 +27,17 @@
   <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 </head>
 <style>
+
+   /*body {
+        background-color: white;
+        color: black;
+        }*/
+
+      .dark-mode {
+      background-color: black;
+      color: white;
+      }
+
   @media only screen and (max-width: 521px) {
     #main_image {
       display: none;
@@ -108,6 +119,7 @@
           <li><a href="#sec3" class="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="#sec4" class="nav-link px-2 text-white">FAQs</a></li>
           <li><a href="#sec5" class="nav-link px-2 text-white">About</a></li>
+          <button onclick="myFunction()">Mode</button>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -708,9 +720,18 @@
 
 		function backToTop() {
 		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
+		document.documentElement.scrollTop = 0;}
+
+     function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+     
 		}
 	</script>
+
+
+
+    
 
 
 </body>
